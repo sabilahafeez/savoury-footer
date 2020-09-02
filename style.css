@@ -18,11 +18,6 @@ body {
     color: #ffbd59;
 }
 
-.footer-widgets .location iframe {
-    width: 100%;
-    height: 200px;
-}
-
 .footer ul {
     list-style: none;
     margin: 1em 0;
@@ -60,4 +55,44 @@ body {
     margin: 1em 0;
     display: inline-block;
     width: 100%;
+}
+
+.footer ul>li>a>i:hover {
+    transition: 0.5s;
+    transform: scale(1.4);
+    background-color: #ffbd59;
+    /* background-color: #FF6600; */
+}
+
+.newsletter input {
+    line-height: 36px;
+    padding: 0 1em;
+    height: 36px;
+    font-weight: bold;
+    outline: none;
+    float: left;
+    border: none;
+}
+
+.newsletter button {
+    background-color: #ffbd59;
+    border: none;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    padding: 0 1em;
+    float: left;
+}
+
+.newsletter button:hover {
+    background-color: #ffbd59;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-widgets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
